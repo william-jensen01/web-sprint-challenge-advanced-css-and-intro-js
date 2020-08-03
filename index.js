@@ -367,3 +367,10 @@ function randomize(array){
  randomize(artists);
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+ const filtered_array = artists.filter(function(artist) {
+  return artist.years[0] >= "1900" && artist.years[0] <= "1999"
+  }
+)
+
+ console.log(filtered_array);
